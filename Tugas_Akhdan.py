@@ -1,0 +1,281 @@
+print("\n\n==>\tPROGRAM INPUT NILAI\n\n")
+print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+print("=================================================================================")
+print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+print("=================================================================================")
+print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+print("=================================================================================")
+print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+
+v=0;
+a=0;
+b=0;
+c=0;
+d=0;
+e=0;
+f=0;
+r=0;
+v=(input("\n\n\n\t\t\t\t\t\ttMasukan Perintah\t\t=\t"))
+print("\n\n\n\n")
+z=1;  
+if(v=="l"):
+         print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+         print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+         print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+         print("=================================================================================")
+         print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+         print("=================================================================================")
+         print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+         v=(input("\n\n\n\t\t\t\t\t\ttMasukan Perintah\t\t=\t"))
+         if(v=="l"):
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+             print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+             print("=================================================================================")
+             print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+             print("=================================================================================")
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+         if(v=="T"):
+             a=(int(input("Masukan NIM Anda")))  
+             b=(str(input("Masukan Nama Anda")))
+             c=(float(input("NIlai Uts")))
+             d=(float(input("Masukan Nilai Uas")))
+             e=(float(input("Masukan Niai Tugas")))
+             f=(c+d+e)*(3.0/3.5/3.5)
+             dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+             print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+             print("=================================================================================")
+             print("|",1,"\t|",a,"\t\t|",b,"    |",c,"\   |",d,"\   |",e,"\    |",f,"\t|")
+             print("=================================================================================")
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             if(v=="U"):
+                 a=(int(input("Masukan NIM Anda")))  
+                 b=(str(input("Masukan Nama Anda")))
+                 c=(float(input("NIlai Uts")))
+                 d=(float(input("Masukan Nilai Uas")))
+                 e=(float(input("Masukan Niai Tugas")))
+                 f=(c+d+e)*(3.0/3.5/3.5)
+                 dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                 print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                 print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+                 print("=================================================================================")
+                 print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+                 print("=================================================================================")
+                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                 if(v=="H"):
+                     dict.clear()
+                     if(v=="C"):
+                         o=input("Cari Nama Anda")
+                         if(int(o==b)):
+                             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                             print("=================================================================================")
+                             print("|NO\t\t|",a,"\t\t|",b,"\t\t|",c,"\t\t|",d,"\t\t|",e,"\t\t|",f,"\t|")
+                             print("=================================================================================")
+                             print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+                             print("=================================================================================")
+                             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                             if(v=="K"):
+                                 print("\n\n==>\tPROGRAM INPUT NILAI\n\n")
+                                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                                 print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                                 print("=================================================================================")
+                                 print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+                                 print("=================================================================================")
+                                 print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+                                 print("=================================================================================")
+                                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+    
+                                 
+if(v=="T"):
+        v=input("Ketik Tambah Untuk Tambah")
+        a=(int(input("Masukan NIM Anda")))  
+        b=(str(input("Masukan Nama Anda")))
+        c=(float(input("NIlai Uts")))
+        d=(float(input("Masukan Nilai Uas")))
+        e=(float(input("Masukan Niai Tugas")))
+        f=(c+d+e)*(3.0/3.5/3.5)
+        dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+        print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+        print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+        print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+        print("=================================================================================")
+        print("|",1,"\t|",a,"\t\t|",b,"    |",c,"\   |",d,"\   |",e,"\    |",f,"\t|")
+        print("=================================================================================")
+        print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+        v=(input("\n\n\n\t\t\t\t\t\ttMasukan Perintah\t\t=\t"))
+for r in range (r,10):
+        if(v=="l"):
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+             print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+             print("=================================================================================")
+             print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+             print("=================================================================================")
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+        if(v=="T"):
+             a=(int(input("Masukan NIM Anda")))  
+             b=(str(input("Masukan Nama Anda")))
+             c=(float(input("NIlai Uts")))
+             d=(float(input("Masukan Nilai Uas")))
+             e=(float(input("Masukan Niai Tugas")))
+             f=(c+d+e)*(3.0/3.5/3.5)
+             dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+             print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+             print("=================================================================================")
+             print("|",1,"\t|",a,"\t\t|",b,"    |",c,"\   |",d,"\   |",e,"\    |",f,"\t|")
+             print("=================================================================================")
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             if(v=="U"):
+                 a=(int(input("Masukan NIM Anda")))  
+                 b=(str(input("Masukan Nama Anda")))
+                 c=(float(input("NIlai Uts")))
+                 d=(float(input("Masukan Nilai Uas")))
+                 e=(float(input("Masukan Niai Tugas")))
+                 f=(c+d+e)*(3.0/3.5/3.5)
+                 dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                 print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                 print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+                 print("=================================================================================")
+                 print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+                 print("=================================================================================")
+                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                 if(v=="H"):
+                     dict.clear()
+                     if(v=="C"):
+                         o=input("Cari Nama Anda")
+                         if(int(o==b)):
+                             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                             print("=================================================================================")
+                             print("|NO\t\t|",a,"\t\t|",b,"\t\t|",c,"\t\t|",d,"\t\t|",e,"\t\t|",f,"\t|")
+                             print("=================================================================================")
+                             print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+                             print("=================================================================================")
+                             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                             if(v=="K"):
+                                 print("\n\n==>\tPROGRAM INPUT NILAI\n\n")
+                                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                                 print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                                 print("=================================================================================")
+                                 print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+                                 print("=================================================================================")
+                                 print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+                                 print("=================================================================================")
+                                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+    
+
+if(v=="U"):
+        a=(int(input("Masukan NIM Anda")))  
+        b=(str(input("Masukan Nama Anda")))
+        c=(float(input("NIlai Uts")))
+        d=(float(input("Masukan Nilai Uas")))
+        e=(float(input("Masukan Niai Tugas")))
+        f=(c+d+e)*(3.0/3.5/3.5)
+        dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+        print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+        print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+        print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+        print("=================================================================================")
+        print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+        print("=================================================================================")
+        print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+        v=(input("\n\n\n\t\t\t\t\t\ttMasukan Perintah\t\t=\t"))
+        if(v=="l"):
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+             print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+             print("=================================================================================")
+             print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+             print("=================================================================================")
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+        if(v=="T"):
+             a=(int(input("Masukan NIM Anda")))  
+             b=(str(input("Masukan Nama Anda")))
+             c=(float(input("NIlai Uts")))
+             d=(float(input("Masukan Nilai Uas")))
+             e=(float(input("Masukan Niai Tugas")))
+             f=(c+d+e)*(3.0/3.5/3.5)
+             dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+             print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+             print("=================================================================================")
+             print("|",1,"\t|",a,"\t\t|",b,"    |",c,"\   |",d,"\   |",e,"\    |",f,"\t|")
+             print("=================================================================================")
+             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+             if(v=="U"):
+                 a=(int(input("Masukan NIM Anda")))  
+                 b=(str(input("Masukan Nama Anda")))
+                 c=(float(input("NIlai Uts")))
+                 d=(float(input("Masukan Nilai Uas")))
+                 e=(float(input("Masukan Niai Tugas")))
+                 f=(c+d+e)*(3.0/3.5/3.5)
+                 dict={"Nama":b,"NIM":a,"Nilai_Uts":c,"Nilai_Uas":d,"Nilai_Tugas":e}
+                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                 print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                 print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+                 print("=================================================================================")
+                 print("|",z,"\t|",a,"\t\t|",b,"    |",c,"    |",d,"     |",e,"      |",f,"\t|")
+                 print("=================================================================================")
+                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                 if(v=="H"):
+                     dict.clear()
+                     if(v=="C"):
+                         o=input("Cari Nama Anda")
+                         if(int(o==b)):
+                             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                             print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                             print("=================================================================================")
+                             print("|NO\t\t|",a,"\t\t|",b,"\t\t|",c,"\t\t|",d,"\t\t|",e,"\t\t|",f,"\t|")
+                             print("=================================================================================")
+                             print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+                             print("=================================================================================")
+                             print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                             if(v=="K"):
+                                 print("\n\n==>\tPROGRAM INPUT NILAI\n\n")
+                                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+                                 print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+                                 print("=================================================================================")
+                                 print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+                                 print("=================================================================================")
+                                 print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+                                 print("=================================================================================")
+                                 print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+    
+        
+if(v=="H"):
+        dict.clear()
+        v=(input("\n\n\n\t\t\t\t\t\ttMasukan Perintah\t\t=\t"))
+
+if(v=="C"):
+    o=input("Cari Nama Anda")
+    if(int(o==b)):
+            print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+            print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+            print("=================================================================================")
+            print("|NO\t\t|",a,"\t\t|",b,"\t\t|",c,"\t\t|",d,"\t\t|",e,"\t\t|",f,"\t|")
+            print("=================================================================================")
+            print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+            print("=================================================================================")
+            print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+            v=(input("\n\n\n\t\t\t\t\t\ttMasukan Perintah\t\t=\t"))
+
+if(v=="K"):
+    print("\n\n==>\tPROGRAM INPUT NILAI\n\n")
+    print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+    print("\t\t\t\t\t\t\t\t\tDAFTAR NILAI")
+    print("=================================================================================")
+    print("|NO\t\t|NIM\t\t|NAMA\t\t|TUGAS\t\t|UTS\t\t|UAS\t\t|AKHIR\t\t|")
+    print("=================================================================================")
+    print("|\t\t\t\t\t\t\t\t\tTIDAK ADA DATA\t\t\t\t\t\t\t\t|")
+    print("=================================================================================")
+    print("(L) Lihat,\t (T) Tambah,\t (U) Ubah,\t (H) Hapus,\t (C) Cari,\t (K) Keluar")
+    v=(input("\n\n\n\t\t\t\t\t\ttMasukan Perintah\t\t=\t"))
